@@ -6,7 +6,7 @@ ul {
 
 li {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     float: right;
     position: relative;
     background-color: white;
@@ -15,23 +15,28 @@ li {
 }
 
 li a {
-    display: block;
+    display: inline-block;
     color: blue;
-    text-align: center;
+    text-align: right;
     padding: 15px 20px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #e0e0e0;
-}
-section.navbar{
-    padding: 20px 20px;
+    color:orange;
 }
 
-.logo{
-    margin-left:100px;
-    margin-right:auto;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+.logo p{
+    float:left;
+    font-size: 30px;
+    padding: 0px 30px;
+}
+
+.container{
+    clear:both;
+    overflow:auto;
+}
+
+*{
+    transition:all 0.3s ease-in-out;
 }

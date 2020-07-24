@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel = "stylesheet" href="css/navbar.css">
     <script>
-        var name = prompt("What is your name?", "Your Name");
-        alert("Welcome to my page, " + name + "!");
+        window.onload = function(){
+            var name = prompt("What's your name?");
+
+            document.getElementById('output').innerHTML = "Welcome to my page, " + name;
+        };
     </script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel = "stylesheet" href="css/navbar.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 
 </head>
 
 <body>
-    <section class="navbar">
+    <div class="navbar">
+        <div class="logo">
+            <p>Jack Wong </p>
+        </div>
         <ul>
-            <div class="logo">
-                <p>JACK WONG</p>
-            </div>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="experience.html">EXPERIENCE</a></li>
-            <li><a href="project.html">PROJECTS</a></li>
         </ul>
-    </section>
+    </div>
+    <hr />
+    <center>
+        <h1 id="output"></h1>
+        <img src="img/Jack Wong.png" style="width: 90%">
+    </center>
 
 </body>
 </html>
